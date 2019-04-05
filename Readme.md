@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [App.xaml.cs](./CS/HidePropertiesExample/App.xaml.cs)
-* [MainWindow.xaml](./CS/HidePropertiesExample/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/HidePropertiesExample/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/HidePropertiesExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HidePropertiesExample/MainWindow.xaml))
 * **[MainWindow.xaml.cs](./CS/HidePropertiesExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HidePropertiesExample/MainWindow.xaml.vb))**
 <!-- default file list end -->
 # WPF Report Designer - How to hide properties of reports and their elements
