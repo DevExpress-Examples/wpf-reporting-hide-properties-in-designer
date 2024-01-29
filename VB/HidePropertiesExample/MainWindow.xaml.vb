@@ -1,38 +1,37 @@
-﻿Imports System
+Imports System
 Imports System.ComponentModel
 Imports System.Windows
 Imports DevExpress.XtraReports.UI
 Imports DevExpress.XtraReports.UserDesigner
 
 Namespace HidePropertiesExample
+
     ''' <summary>
     ''' Interaction logic for MainWindow.xaml
     ''' </summary>
-    Partial Public Class MainWindow
+    Public Partial Class MainWindow
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
-
+            Me.InitializeComponent()
             Dim report = New XtraReport()
-            AddHandler XtraReport.FilterComponentProperties, AddressOf XtraReport_FilterComponentProperties
-            reportDesigner.OpenDocument(report)
+            AddHandler XtraReport.FilterComponentProperties, AddressOf HidePropertiesExample.MainWindow.XtraReport_FilterComponentProperties
+            Me.reportDesigner.OpenDocument(report)
         End Sub
 
         Private Shared Sub XtraReport_FilterComponentProperties(ByVal sender As Object, ByVal e As FilterComponentPropertiesEventArgs)
             ' The following line hides the Scripts property for all report elements.
-            HideProperty("Scripts", e)
-
+            Call HideProperty("Scripts", e)
             ' The following code hides the ReportSource property, 
             ' for subreports to always contain only the pre-defined reports.
             If TypeOf e.Component Is XRSubreport Then
-                HideProperty("ReportSource", e)
-                HideProperty("ReportSourceUrl", e)
+                Call HideProperty("ReportSource", e)
+                Call HideProperty("ReportSourceUrl", e)
             End If
 
             ' The following code hides the Text property for XRLabel
             If TypeOf e.Component Is XRLabel Then
-                HideProperty("Text", e)
+                Call HideProperty("Text", e)
             End If
         End Sub
 
@@ -41,7 +40,7 @@ Namespace HidePropertiesExample
             If oldPropertyDescriptor IsNot Nothing Then
                 ' Substitute the current property descriptor 
                 ' with a custom one with the BrowsableAttribute.No attribute.
-                filterComponentProperties.Properties(propertyName) = TypeDescriptor.CreateProperty(oldPropertyDescriptor.ComponentType, oldPropertyDescriptor, New Attribute() { BrowsableAttribute.No })
+                filterComponentProperties.Properties(propertyName) = TypeDescriptor.CreateProperty(oldPropertyDescriptor.ComponentType, oldPropertyDescriptor, New Attribute() {BrowsableAttribute.No})
             Else
                 ' If the property descriptor can not be substituted, 
                 ' remove it from the Properties collection.
