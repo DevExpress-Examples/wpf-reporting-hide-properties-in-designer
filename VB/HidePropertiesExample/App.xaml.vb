@@ -1,9 +1,10 @@
-﻿Imports System.Windows
+Imports System.Windows
 Imports DevExpress.XtraReports.Expressions
 Imports DevExpress.XtraReports.UI
 
 Namespace HidePropertiesExample
-    Partial Public Class App
+
+    Public Partial Class App
         Inherits Application
 
         Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
