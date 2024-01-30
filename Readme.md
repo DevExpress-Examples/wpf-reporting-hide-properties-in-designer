@@ -12,9 +12,9 @@ This example shows how to hide properties of a report, its bands, and controls f
 
 ## Files to Review
 
-* [App.xaml.cs](./CS/HidePropertiesExample/App.xaml.cs)
-* [MainWindow.xaml](./CS/HidePropertiesExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HidePropertiesExample/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/HidePropertiesExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HidePropertiesExample/MainWindow.xaml.vb))
+* [App.xaml.cs](./CS/App.xaml.cs)
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
 
 ## Documentation
 
