@@ -21,7 +21,7 @@ This example shows how to hide properties of a report, its bands, and controls f
 
 * [Hide Properties from the Report Designer](https://docs.devexpress.com/XtraReports/119459/desktop-reporting/wpf-reporting/end-user-report-designer-for-wpf/api-and-customization/hide-properties-from-the-report-designer)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-reporting-hide-properties-in-designer&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-reporting-hide-properties-in-designer&~~~was_helpful=no)
 
